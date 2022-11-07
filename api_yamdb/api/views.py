@@ -11,6 +11,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
+from api_yamdb.settings import DEFAULT_FROM_EMAIL
+from reviews.models import Category, Genre, Review, Title
+from users.models import User
+
 from .filters import TitleFilter
 from .mixins import CreateListDestroyMixinViewset
 from .permissions import (AdminOnly, IsAdminOrIsSelf, IsAdminOrReadOnly,
@@ -20,9 +24,6 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleGetSerializer, TitlePostSerializer,
                           UserSerializer)
-from api_yamdb.settings import DEFAULT_FROM_EMAIL
-from reviews.models import Category, Genre, Review, Title
-from users.models import User
 
 
 class CreateUser(APIView):
