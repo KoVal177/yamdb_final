@@ -20,7 +20,7 @@ class Command(BaseCommand):
             ('users.csv', 'users', 'User'),
         }
         path_base = settings.BASE_DIR
-        #path_to_csv = Path('static/data/')
+        # path_to_csv = Path('static/data/')
         path_to_csv = Path('api/management/commands/data/')
 
         fixture_item = {}
