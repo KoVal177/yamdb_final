@@ -2,7 +2,6 @@ name: Django-app workflow
 
 on:
   push:
-    branches: [ "master" ]
 
 jobs:
   tests:
@@ -27,6 +26,11 @@ jobs:
         python -m flake8
         pytest
 
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
@@ -85,11 +89,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            # ./final_preps.sh
-            # sudo docker-compose exec -T web python manage.py collectstatic --no-input
-            # sudo docker-compose exec -T web python manage.py migrate
-            # sudo docker-compose exec -T web python manage.py create_fixtures
-            # sudo docker-compose exec -T web python manage.py populate_fixtures
+            sudo docker-compose exec -T web python manage.py collectstatic --no-input
+            sudo docker-compose exec -T web python manage.py migrate
+            sudo docker-compose exec -T web python manage.py create_fixtures
+            sudo docker-compose exec -T web python manage.py populate_fixtures
 
   send_message:
     runs-on: ubuntu-latest
