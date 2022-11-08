@@ -59,8 +59,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker-compose --rmi all
-            # sudo docker-compose stop
+            sudo docker-compose down
+            sudo docker image rm -f valiok123456/web:latest
             # sudo docker-compose rm -sf
             # sudo docker volume rm $(sudo docker volume ls -q)
             # sudo docker image rm $(sudo docker image ls -q)
