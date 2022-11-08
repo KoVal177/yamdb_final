@@ -4,8 +4,8 @@
 https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
 
 ![workflow](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-![event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
-![branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=master)
+![event parameter](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
+![branch parameter](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
 
 ### Действия
 При добавлении изменений в репозиторий выполняются следующие действия:   
