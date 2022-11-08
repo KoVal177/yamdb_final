@@ -2,8 +2,7 @@ name: Django-app workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   tests:
