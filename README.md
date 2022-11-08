@@ -1,11 +1,7 @@
 # Разворачивание проекта ["Yamdb"](https://github.com/KoVal177/api_yamdb/) на Docker и отдельном сервере.
   
 ### Состояние
-https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
-
-![workflow](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-![event parameter](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
-![branch parameter](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
+push event: ![event parameter](https://github.com/KoVal177/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
 
 ### Действия
 При добавлении изменений в репозиторий выполняются следующие действия:   
