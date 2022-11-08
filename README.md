@@ -2,8 +2,6 @@
   
 ### Состояние
 ![workflow](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg)
-![event parameter](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
-![branch parameter](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)
   
 ### Действия
 При добавлении изменений в репозиторий выполняются следующие действия:   
