@@ -13,7 +13,7 @@ push event:
 5. Администратору через telegram отправляется уведомление, если все действия были произведены успешно.
   
 Работающий сервер находится по адресу [vkyatube.sytes.net/](http://vkyatube.sytes.net/)  
-Результат выполнения запроса "Выдать названия всех произведений" - [vkyatube.sytes.net/api/v1/titles/](http://vkyatube.sytes.net/api/v1/titles/)
+Точка входа API [vkyatube.sytes.net/api/v1/](http://vkyatube.sytes.net/api/v1/)  
 
 # Проект «YaMDb»
 ### Описание
