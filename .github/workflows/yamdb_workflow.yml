@@ -59,7 +59,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker-compose stop
+            # sudo docker-compose stop
             sudo docker-compose -sf
             sudo docker volume rm $(sudo docker volume ls -q)
             sudo docker image rm $(sudo docker image ls -q)
